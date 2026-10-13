@@ -1,0 +1,88 @@
+/* Estilos de la práctica de posiciones */
+.practica{
+    padding: 20px;
+    max-width: 800px;
+}
+.demo{
+    margin-bottom: 40px;
+}
+.contenedor{
+    background-color: lightgray;
+    padding: 5px;
+    min-height: 220px;
+}
+.contenedor-relativo{
+    position: relative;
+}
+
+/* 1. static */
+.caja-naranja-static{
+    background: orange;
+    height: 100px;
+    width: 100px;
+}
+.caja-azul-static{
+    background: lightskyblue;
+    height: 100px;
+    width: 100px;
+    position: static;
+}
+
+/* 2. relative */
+.caja-naranja-relative{
+    position: relative;
+    background: orange;
+    width: 100px;
+    height: 100px;
+    top: 50px;
+    left: 50px;
+}
+.caja-azul-relative{
+    background: lightskyblue;
+    width: 100px;
+    height: 100px;
+}
+
+/* 3. absolute */
+.caja-naranja-absolute{
+    position: absolute;
+    background: orange;
+    width: 100px;
+    height: 100px;
+    top: 5px;
+    right: 5px;
+}
+.caja-azul-absolute{
+    background: lightskyblue;
+    width: 100px;
+    height: 100px;
+}
+
+/* 4. fixed */
+.caja-naranja-fixed{
+    position: fixed;
+    background: orange;
+    width: 100px;
+    height: 100px;
+    right: 5px;
+    bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+/* 5. sticky */
+.area-scroll{
+    background: lightgray;
+    height: 200px;
+    overflow: auto;
+    padding: 0 10px;
+}
+.caja-sticky{
+    position: sticky;
+    top: 0;
+    background: orange;
+    padding: 10px;
+    font-weight: bold;
+}

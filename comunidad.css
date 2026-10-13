@@ -1,0 +1,70 @@
+/* Estilos de la página Comunidad */
+.principal h1{
+    margin-top: 0;
+}
+.principal h2{
+    margin-top: 30px;
+}
+.secundario{
+    width: 30%;
+    background-color: #f7f3f3;
+    padding: 20px;
+    border: 2px solid #cccccc;
+}
+
+/* Tabla de tecnologías */
+.tabla-contenedor{
+    overflow-x: auto;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+caption{
+    text-align: left;
+    font-weight: bold;
+    padding-bottom: 8px;
+}
+th, td{
+    border: 1px solid #cccccc;
+    padding: 10px;
+    text-align: left;
+    vertical-align: top;
+}
+th{
+    background-color: #4e1212;
+    color: #f8f7f7;
+}
+tbody tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+/* Lista de definiciones */
+dl{
+    margin: 0;
+}
+dt{
+    font-weight: bold;
+    color: #4e1212;
+    margin-top: 15px;
+}
+dd{
+    margin-left: 20px;
+}
+
+/* Video */
+.video{
+    position: relative;
+    width: 100%;
+    max-width: 640px;
+    aspect-ratio: 16 / 9;
+}
+.video iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}

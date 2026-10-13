@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Práctica de posiciones</title>
+        <link rel="stylesheet" href="estilos.css">
+        <link rel="stylesheet" href="posiciones.css">
+    </head>
+    <body>
+        <header><img src="awa.jpg"></header>
+        <nav>
+            <ul>
+                <li><a href="#">Conóceme</a>
+                    <ul>
+                        <li><a href="información.html">información personal</a></li>
+                        <li><a href="pasatiempos.html">pasatiempos</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Segunda Parcial</a>
+                    <ul>
+                        <li><a href="practica-posiciones.html">Práctica de posiciones</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Tercera Parcial</a>
+                    <ul>
+                        <li><a href="comunidad.html">Comunidad</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <main class="practica">
+            <h1>Práctica de posiciones</h1>
+            <p>
+                Práctica del artículo de freeCodeCamp
+                <a href="https://www.freecodecamp.org/espanol/news/como-usar-la-propiedad-posicion-en-css-para-alinear-elementos/">Cómo usar la propiedad de posición en CSS para alinear elementos</a>.
+                Los valores de <code>position</code> son: static, relative, absolute, fixed y sticky.
+            </p>
+
+            <!-- 1. STATIC -->
+            <div class="demo">
+                <h2>1. position: static</h2>
+                <p>Es el valor por defecto: las cajas siguen el flujo normal del documento, con o sin declararlo.</p>
+                <div class="contenedor">
+                    <div class="caja-naranja-static"></div>
+                    <div class="caja-azul-static"></div>
+                </div>
+            </div>
+
+            <!-- 2. RELATIVE -->
+            <div class="demo">
+                <h2>2. position: relative</h2>
+                <p>La caja naranja se mueve 50px hacia abajo y 50px hacia la derecha respecto a su posición normal. No afecta a las demás cajas.</p>
+                <div class="contenedor">
+                    <div class="caja-naranja-relative"></div>
+                    <div class="caja-azul-relative"></div>
+                </div>
+            </div>
+
+            <!-- 3. ABSOLUTE -->
+            <div class="demo">
+                <h2>3. position: absolute</h2>
+                <p>La caja naranja sale del flujo y se posiciona respecto a su padre (que tiene <code>position: relative</code>), a 5px de arriba y 5px de la derecha. La caja azul sube como si la naranja no existiera.</p>
+                <div class="contenedor contenedor-relativo">
+                    <div class="caja-naranja-absolute"></div>
+                    <div class="caja-azul-absolute"></div>
+                </div>
+            </div>
+
+            <!-- 4. FIXED -->
+            <div class="demo">
+                <h2>4. position: fixed</h2>
+                <p>La caja naranja de la esquina inferior derecha de la pantalla está con <code>position: fixed</code>: se posiciona respecto al documento y no se mueve al hacer scroll.</p>
+                <div class="contenedor contenedor-relativo">
+                    <div class="caja-azul-static"></div>
+                </div>
+                <div class="caja-naranja-fixed">fixed</div>
+            </div>
+
+            <!-- 5. STICKY -->
+            <div class="demo">
+                <h2>5. position: sticky</h2>
+                <p>Se comporta como relative hasta cierto punto y luego como fixed. Desplaza el contenido de la caja gris y observa que el título se queda pegado arriba.</p>
+                <div class="area-scroll">
+                    <div class="caja-sticky">Título sticky (top: 0)</div>
+                    <p>Línea 1 de contenido para hacer scroll.</p>
+                    <p>Línea 2 de contenido para hacer scroll.</p>
+                    <p>Línea 3 de contenido para hacer scroll.</p>
+                    <p>Línea 4 de contenido para hacer scroll.</p>
+                    <p>Línea 5 de contenido para hacer scroll.</p>
+                    <p>Línea 6 de contenido para hacer scroll.</p>
+                    <p>Línea 7 de contenido para hacer scroll.</p>
+                    <p>Línea 8 de contenido para hacer scroll.</p>
+                    <p>Línea 9 de contenido para hacer scroll.</p>
+                    <p>Línea 10 de contenido para hacer scroll.</p>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <img src="uni.png">
+            <div>
+                <p><strong>Universidad de Colima</strong></p>
+                <p>Bachillerato 8</p>
+                <p>Programación en internet I</p>
+            </div>
+        </footer>
+    </body>
+</html>
